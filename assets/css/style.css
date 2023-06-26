@@ -1,0 +1,162 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: #13293d;
+  color: #fff;
+}
+
+
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  margin: 2% 0;
+  font-size: 250%;
+}
+
+p {
+  line-height: 120%;
+}
+
+article ul {
+  font-size: 160%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+nav a {
+  color: #b9c6ae;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+
+
+article p {
+  margin: 0 2% 0 0;
+  font-size: 130%;
+  max-width: 76%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: #13293d;
+  color: #fff;
+}
+
+.background-art{
+  height: 400px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/abstract.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.projects {
+  flex: 2;
+  /* padding: 50px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+
+/* Added rotation, box-shadow, border-radius */
+.card {
+  padding: 10px;
+  flex: 0 1 40%;
+}
+
+/* Added border-radius to match the card */
+.card header {
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.big {
+  min-width: 80%;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 2rem;
+}
+
+.content aside {
+  text-align: right;
+  padding-right: 3rem;
+  flex: 0 4 250px;
+  max-width: 250px;
+  border-right: 4px solid #13293d;
+}
+
+.content article {
+  flex: 1 0 0;
+  padding-left: 1rem;
+  margin-left: 1rem;
+}
+
+.content .card {
+  margin: 0rem;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  main {
+    max-width: 1200px;
+  }
+
+  .content {
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .projects {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 2 1 40%;
+    max-height: 20%;
+  }
+  .content aside {
+    text-align: center;
+    padding-bottom: .5rem;
+    padding-right: 0rem;
+    min-width: 100%;
+    border-right: 0px;
+    flex: 1 0 0;
+  }
+}
