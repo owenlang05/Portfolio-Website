@@ -51,13 +51,14 @@ nav a:hover {
 }
 
 
-
+/* Makes the paragraph flow better with the white space plus increased font size */
 article p {
   margin: 0 2% 0 0;
   font-size: 130%;
   max-width: 76%;
 }
 
+/* Creates the footer styling */
 footer {
   display: flex;
   justify-content: center;
@@ -66,6 +67,7 @@ footer {
   color: #fff;
 }
 
+/* Background image at the top of the page */
 .background-art{
   height: 400px;
   width: 100%;
@@ -75,30 +77,28 @@ footer {
   background-position: center;
 }
 
+/* sets up the container for the projects flexbox */
 .projects {
   flex: 2;
-  /* padding: 50px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-
 }
 
-/* Added rotation, box-shadow, border-radius */
+/* Cards for the projects sets up basis of 40% */
 .card {
   padding: 10px;
   flex: 0 1 40%;
 }
 
-/* Added border-radius to match the card */
+
 .card header {
   padding: 20px;
 }
 
 .card img {
   width: 100%;
-  object-fit: cover;
 }
 
 .big {
