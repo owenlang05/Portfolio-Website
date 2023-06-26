@@ -8,11 +8,11 @@ This is a portfolio website for my future projects. Right now there is just fake
 
 ## Usage
 
-Go to the website at 
+Go to the website at https://owenlang05.github.io/Portfolio-Website/
 
 ## License
 
-See License in Repo
+See License in the Repo.
 
 
 
